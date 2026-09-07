@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SIPF 2026 | Ciraolo et al.</title>
+
+    <style>
+
+        :root {
+            --brown: #836c35;
+            --charcoal: #41424b;
+            --sage: #7ca999;
+            --yellow: #f4de65;
+            --orange: #e67f3b;
+            --red: #cf471d;
+            --background: #f6f5f1;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--charcoal);
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            line-height: 1.5;
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--sage);
+            padding: 48px 0 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            max-width: 950px;
+
+            font-size: clamp(2rem, 5vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+
+            color: var(--charcoal);
+        }
+
+        .authors {
+            margin-top: 24px;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .affiliation {
+            margin-top: 6px;
+            opacity: 0.85;
+        }
+
+        main {
+            padding: 40px 0 60px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 28px;
+
+            margin-bottom: 28px;
+
+            box-shadow:
+                0 8px 30px rgba(65, 66, 75, 0.07);
+        }
+
+        .poster-image {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            border-radius: 12px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            margin-top: 24px;
+        }
+
+        .button {
+            display: inline-block;
+
+            padding: 14px 22px;
+
+            border-radius: 100px;
+
+            text-decoration: none;
+            font-weight: 700;
+
+            transition:
+                transform 0.15s ease,
+                opacity 0.15s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+
+        .poster-button {
+            background: var(--yellow);
+            color: var(--charcoal);
+        }
+
+        .abstract-button {
+            background: var(--charcoal);
+            color: white;
+        }
+
+        .contact-button {
+            background: var(--red);
+            color: white;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            color: #6c6d73;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            padding: 0 0 50px;
+            color: #6c6d73;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 34px 0;
+            }
+
+            .card {
+                padding: 18px;
+                border-radius: 18px;
+            }
+
+            .button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="meta">
+            SIPF 2026
+        </div>
+
+        <h1>
+            The many times of action observation on corticospinal
+            excitability: Coupling online facilitation with after-effects.
+        </h1>
+
+        <div class="authors">
+            Ciraolo A., Bazzini M.C., Nuara A.,
+            Avanzini P., Fabbri-Destro M.
+        </div>
+
+        <div class="affiliation">
+            Department of Medicine and Surgery, University of Parma
+            <br>
+            Institute of Neuroscience, National Research Council (CNR),
+            Parma, Italy
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <section class="card">
+
+        <h2>Poster</h2>
+
+        <img
+            src="poster-preview.jpg"
+            alt="SIPF 2026 scientific poster"
+            class="poster-image"
+        >
+
+        <div class="buttons">
+
+            <a
+                class="button poster-button"
+                href="poster.pdf"
+                target="_blank"
+            >
+                View poster PDF
+            </a>
+
+            <a
+                class="button abstract-button"
+                href="abstract.pdf"
+                target="_blank"
+            >
+                View abstract
+            </a>
+
+            <a
+                class="button contact-button"
+                href="mailto:alessandro.ciraolo@unipr.it"
+            >
+                Contact
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>About the study</h2>
+
+        <p>
+            Action observation induces corticospinal facilitation during
+            movement observation. This study investigated whether individual
+            online responsiveness predicts subsequent changes in resting
+            corticospinal excitability.
+        </p>
+
+        <p>
+            A sham-TMS control experiment using the same visual conditions
+            is planned to disentangle AO-driven after-effects from potential
+            TMS-related contributions.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer class="container">
+
+    SIPF 2026 · Alessandro Ciraolo
+    <br>
+    alessandro.ciraolo@unipr.it
+
+</footer>
+
+</body>
+
+</html>
